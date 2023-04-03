@@ -36,7 +36,9 @@ export default function OpeningHours(props) {
               This will enable us to take order & deliver much quicker
               throughout our opening hours.
             </p>
-            <h2 className="black-large-title">Delivery & Collection</h2>
+            <h2 className="black-large-title display-none-when-extra-small">
+              Delivery & Collection
+            </h2>
             <OrderGrid
               textColor="black"
               logo1={JustEatLogo}

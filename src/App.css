@@ -185,7 +185,6 @@ img {
 .subHeading {
   font-family: var(--sub-heading-font-family);
   font-size: 30px;
-  background: rgba(79, 173, 212, 0.16);
   padding: 8px 0;
 }
 .itallic-subHeading {

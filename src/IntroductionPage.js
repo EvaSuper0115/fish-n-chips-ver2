@@ -40,7 +40,9 @@ export default function IntroductionPage(props) {
                 alt="pieNSauce"
               ></img>
             </div>
-            <h2 className="black-large-title">Order Now</h2>
+            <h2 className="black-large-title display-none-when-extra-small">
+              Order Now
+            </h2>
             <OrderGrid
               textColor="black"
               logo1={JustEatLogo}

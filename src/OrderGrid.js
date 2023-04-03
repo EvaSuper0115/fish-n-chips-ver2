@@ -2,7 +2,7 @@ import React from "react";
 
 export default function OrderGrid(props) {
   return (
-    <div className="order-grid ">
+    <div className="order-grid display-none-when-extra-small">
       <a
         id="order-links"
         className="float-end"
