@@ -16,6 +16,7 @@ import MenuChildrensMeal from "./MenuChildrensMeal";
 import MenuMealDeal from "./MenuMealDeal";
 import MenuOAP from "./MenuOAP";
 import MenuDrinks from "./MenuDrinks";
+import MenuExtras from "./MenuExtras";
 
 function App() {
   const mainMenuHref = "#menu";
@@ -31,6 +32,7 @@ function App() {
     { menuTitle: "Meal Deal", menuHref: "meal-deal-menu" },
     { menuTitle: "OAP Meal", menuHref: "OAP-cod-&-chips-menu" },
     { menuTitle: "Drinks", menuHref: "drinks-menu" },
+    { menuTitle: "Extras", menuHref: "extras-menu" },
   ];
 
   return (
@@ -130,6 +132,7 @@ function App() {
       <MenuMealDeal menuDetails={menuItems[8]} />
       <MenuOAP menuDetails={menuItems[9]} />
       <MenuDrinks menuDetails={menuItems[10]} />
+      <MenuExtras menuDetails={menuItems[11]} />
     </div>
   );
 }
