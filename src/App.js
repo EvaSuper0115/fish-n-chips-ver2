@@ -17,6 +17,7 @@ import MenuMealDeal from "./MenuMealDeal";
 import MenuOAP from "./MenuOAP";
 import MenuDrinks from "./MenuDrinks";
 import MenuExtras from "./MenuExtras";
+import FloatingOrderNote from "./FloatingOrderNote";
 
 function App() {
   const mainMenuHref = "#menu";
@@ -133,6 +134,7 @@ function App() {
       <MenuOAP menuDetails={menuItems[9]} />
       <MenuDrinks menuDetails={menuItems[10]} />
       <MenuExtras menuDetails={menuItems[11]} />
+      <FloatingOrderNote />
     </div>
   );
 }

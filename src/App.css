@@ -44,14 +44,24 @@ button:hover {
 img {
   border-radius: 5px;
 }
-.Note {
+.floatingNote {
   position: fixed;
   bottom: 0;
   right: 0;
   z-index: 9999;
   padding: 5px;
-  background: var(--highlight-background);
+  background: #8080805c;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.individualFloatingNote {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+.floatingNote a {
   color: white;
 }
 .note-table {
@@ -202,11 +212,15 @@ img {
   justify-content: center;
   align-items: center;
 }
-.icon-adjustments {
+.icon-adjustments,
+.floating-icon-adjustments {
   width: 7vh;
-  border-radius: 5px;
+  border-radius: 15px;
   padding: 4px;
   filter: brightness(110%);
+}
+.floating-icon-adjustments {
+  width: 9vh;
 }
 .sqaure-image {
   width: 100%;
@@ -277,6 +291,11 @@ img {
 .menuItemsText {
   text-transform: capitalize;
 }
+@media (min-width: 577px) {
+  .display-none-when-big-screen {
+    display: none;
+  }
+}
 @media (max-width: 820px) {
   .display-none-when-small {
     display: none;
@@ -331,5 +350,14 @@ img {
   .menuTypeGrid {
     grid-template-columns: repeat(2, 1fr);
     padding: var(--576px-screen-section-padding);
+  }
+  .floating-icon-adjustments {
+    width: 5vh;
+    border-radius: 12px;
+    padding: 3px;
+    opacity: 0.8;
+  }
+  .floatingNote {
+    padding: 1px;
   }
 }
