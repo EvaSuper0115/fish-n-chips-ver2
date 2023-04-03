@@ -15,7 +15,6 @@ import MenuOthers from "./MenuOthers";
 import MenuChildrensMeal from "./MenuChildrensMeal";
 import MenuMealDeal from "./MenuMealDeal";
 import MenuOAP from "./MenuOAP";
-import Note from "./Note";
 
 function App() {
   const mainMenuHref = "#menu";
@@ -31,10 +30,6 @@ function App() {
     { menuTitle: "Meal Deal", menuHref: "meal-deal-menu" },
     { menuTitle: "OAP Cod & Chips", menuHref: "OAP-cod-&-chips-menu" },
   ];
-  const [addedItems, setAddedItems] = useState([]);
-  function handleAddItem(item) {
-    setAddedItems([...addedItems, item]);
-  }
 
   return (
     <div className="App">
@@ -122,17 +117,16 @@ function App() {
       <OpeningHours id="opening-hours" />
       <PartyCatering id="party-catering" menuHref={mainMenuHref} />
       <MenuFilter id="menu" menuItems={menuItems} />
-      <MenuFish menuDetails={menuItems[0]} onAddItem={handleAddItem} />
-      <MenuChips menuDetails={menuItems[1]} onAddItem={handleAddItem} />
-      <MenuSausage menuDetails={menuItems[2]} onAddItem={handleAddItem} />
-      <MenuBurger menuDetails={menuItems[3]} onAddItem={handleAddItem} />
-      <MenuPie menuDetails={menuItems[4]} onAddItem={handleAddItem} />
-      <MenuChicken menuDetails={menuItems[5]} onAddItem={handleAddItem} />
-      <MenuOthers menuDetails={menuItems[6]} onAddItem={handleAddItem} />
-      <MenuChildrensMeal menuDetails={menuItems[7]} onAddItem={handleAddItem} />
-      <MenuMealDeal menuDetails={menuItems[8]} onAddItem={handleAddItem} />
-      <MenuOAP menuDetails={menuItems[9]} onAddItem={handleAddItem} />
-      <Note addedItems={addedItems} />
+      <MenuFish menuDetails={menuItems[0]} />
+      <MenuChips menuDetails={menuItems[1]} />
+      <MenuSausage menuDetails={menuItems[2]} />
+      <MenuBurger menuDetails={menuItems[3]} />
+      <MenuPie menuDetails={menuItems[4]} />
+      <MenuChicken menuDetails={menuItems[5]} />
+      <MenuOthers menuDetails={menuItems[6]} />
+      <MenuChildrensMeal menuDetails={menuItems[7]} />
+      <MenuMealDeal menuDetails={menuItems[8]} />
+      <MenuOAP menuDetails={menuItems[9]} />
     </div>
   );
 }
