@@ -242,6 +242,8 @@ img {
   background: #d9d9d93b;
   border-radius: 10px;
   border-width: 0;
+  width: 80%;
+  margin: 0 auto;
 }
 .col-of-MenuItemGrid {
   display: grid;
@@ -252,11 +254,12 @@ img {
 }
 .menu-item-grid {
   display: grid;
-  grid-template-columns: 0.6fr 0.4fr;
-  grid-gap: 10px;
-  padding: 10px 0;
+  grid-template-columns: 1.5fr 1fr;
+  grid-gap: 3vh;
+  padding: 10px 0px;
   text-transform: capitalize;
 }
+
 .menuTypeGrid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -298,14 +301,19 @@ img {
   .MapEmbed {
     aspect-ratio: 1.5/1;
   }
-  .menu-card-grid,
-  .col-of-MenuItemGrid {
-    grid-template-columns: 1fr;
-  }
+
   .menuTypeGrid {
     grid-template-columns: repeat(3, 1fr);
   }
+  .menu-item-grid {
+    padding: 10px 0;
+  }
+  .menu-card {
+    margin: 0;
+    width: 100%;
+  }
 }
+
 @media (max-width: 576px) {
   .brand-name {
     margin: 5vh 0;
@@ -323,8 +331,5 @@ img {
   .menuTypeGrid {
     grid-template-columns: repeat(2, 1fr);
     padding: var(--576px-screen-section-padding);
-  }
-  .menu-item-grid {
-    grid-template-columns: 1fr 1fr;
   }
 }

@@ -3,7 +3,7 @@ import MenuItemGrid from "./MenuItemGrid";
 export default function MenuExtras(props) {
   const menuItems = [
     {
-      food: "Heinz Ketchup (Squeeze Me!) 26ml sachet",
+      food: "Heinz Ketchup (Squeeze Me!) - 26ml sachet",
       prices: [{ price: 0.7 }],
     },
     {
