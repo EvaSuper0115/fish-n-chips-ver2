@@ -2,11 +2,11 @@ import React from "react";
 import MenuItemGrid from "./MenuItemGrid";
 export default function MenuMealDeal(props) {
   const menuItems = [
-    { food: "Meal deal cod & chips", prices: [{ price: 7 }] },
-    { food: "Meal deal cheese burger & chips", prices: [{ price: 5.9 }] },
-    { food: "Meal deal chicken nuggets & chips", prices: [{ price: 6.2 }] },
-    { food: "Meal deal large Sausage & chips", prices: [{ price: 4.7 }] },
-    { food: "Meal deal fishcake & chips", prices: [{ price: 4.2 }] },
+    { food: "Cod & chips", prices: [{ price: 8.3 }] },
+    { food: "Cheese burger & chips", prices: [{ price: 6.9 }] },
+    { food: "Chicken nuggets & chips", prices: [{ price: 7.3 }] },
+    { food: "Large sausage & chips", prices: [{ price: 5.8 }] },
+    { food: "Fishcake & chips", prices: [{ price: 5.1 }] },
   ];
 
   return (

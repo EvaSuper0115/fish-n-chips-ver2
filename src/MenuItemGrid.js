@@ -11,7 +11,6 @@ export default function MenuItemGrid(props) {
               <span className="menu-item-col">
                 {item.size} £{Number(item.price).toFixed(2)}
               </span>
-              <span title={`save ${props.food} to note`}></span>
             </div>
           ))}
         </div>

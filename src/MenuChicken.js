@@ -2,10 +2,10 @@ import React from "react";
 import MenuItemGrid from "./MenuItemGrid";
 export default function MenuChicken(props) {
   const menuItems = [
-    { food: "Quarter breast", prices: [{ price: 5 }] },
-    { food: "Nuggets (8)", prices: [{ price: 4.6 }] },
-    { food: "Popcorn chicken", prices: [{ price: 2.7 }] },
-    { food: "Spicy chicken wings (4)", prices: [{ price: 2.7 }] },
+    { food: "Quarter breast", prices: [{ price: 5.9 }] },
+    { food: "Nuggets (8)", prices: [{ price: 5.5 }] },
+    { food: "Popcorn chicken", prices: [{ price: 3.2 }] },
+    { food: "Spicy chicken wings (4)", prices: [{ price: 3.2 }] },
   ];
 
   return (

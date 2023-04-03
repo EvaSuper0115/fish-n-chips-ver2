@@ -4,15 +4,15 @@ export default function MenuPie(props) {
   const menuItems = [
     {
       food: "Chicken & mushroom pie",
-      prices: [{ price: 3.8 }],
+      prices: [{ price: 4.2 }],
     },
     {
       food: "Steak & kidney pie",
-      prices: [{ price: 3.8 }],
+      prices: [{ price: 4.2 }],
     },
     {
       food: "Beef & onion pie",
-      prices: [{ price: 3.8 }],
+      prices: [{ price: 4.2 }],
     },
   ];
 

@@ -1,5 +1,5 @@
 import "./App.css";
-import { useState } from "react";
+
 import PageHero from "./PageHero";
 import IntroductionPage from "./IntroductionPage";
 import OpeningHours from "./OpeningHours";
@@ -15,6 +15,7 @@ import MenuOthers from "./MenuOthers";
 import MenuChildrensMeal from "./MenuChildrensMeal";
 import MenuMealDeal from "./MenuMealDeal";
 import MenuOAP from "./MenuOAP";
+import MenuDrinks from "./MenuDrinks";
 
 function App() {
   const mainMenuHref = "#menu";
@@ -28,7 +29,8 @@ function App() {
     { menuTitle: "Others", menuHref: "others-menu" },
     { menuTitle: "Children's Meal", menuHref: "children's-meal-menu" },
     { menuTitle: "Meal Deal", menuHref: "meal-deal-menu" },
-    { menuTitle: "OAP Cod & Chips", menuHref: "OAP-cod-&-chips-menu" },
+    { menuTitle: "OAP Meal", menuHref: "OAP-cod-&-chips-menu" },
+    { menuTitle: "Drinks", menuHref: "drinks-menu" },
   ];
 
   return (
@@ -127,6 +129,7 @@ function App() {
       <MenuChildrensMeal menuDetails={menuItems[7]} />
       <MenuMealDeal menuDetails={menuItems[8]} />
       <MenuOAP menuDetails={menuItems[9]} />
+      <MenuDrinks menuDetails={menuItems[10]} />
     </div>
   );
 }
