@@ -5,36 +5,36 @@ export default function MenuBurger(props) {
     {
       food: "Beef burger",
       prices: [
-        { size: "Small", price: 2.8 },
-        { size: "Large", price: 3.8 },
+        { size: "Small", price: 3.3 },
+        { size: "Large", price: 4.5 },
       ],
     },
     {
       food: "Cheese burger",
       prices: [
-        { size: "Small", price: 3.1 },
-        { size: "Large", price: 4.1 },
+        { size: "Small", price: 3.7 },
+        { size: "Large", price: 4.9 },
       ],
     },
     {
       food: "Chicken burger",
       prices: [
-        { size: "Small", price: 3.4 },
-        { size: "Large", price: 4.9 },
+        { size: "Small", price: 4 },
+        { size: "Large", price: 5.5 },
       ],
     },
     {
       food: "Spicy chicken burger",
       prices: [
-        { size: "Small", price: 3.4 },
-        { size: "Large", price: 4.9 },
+        { size: "Small", price: 4 },
+        { size: "Large", price: 5.5 },
       ],
     },
     {
       food: "Veggie burger",
       prices: [
-        { size: "Small", price: 3 },
-        { size: "Large", price: 4 },
+        { size: "Small", price: 3.5 },
+        { size: "Large", price: 4.6 },
       ],
     },
     {

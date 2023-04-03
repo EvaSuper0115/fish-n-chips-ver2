@@ -5,28 +5,28 @@ export default function MenuSausage(props) {
     {
       food: "Plain sausage",
       prices: [
-        { size: "Small", price: 1.2 },
-        { size: "Large", price: 1.9 },
+        { size: "Small", price: 1.4 },
+        { size: "Large", price: 2.3 },
       ],
     },
     {
       food: "Battered sausage",
       prices: [
-        { size: "Small", price: 1.3 },
-        { size: "Large", price: 2 },
+        { size: "Small", price: 1.5 },
+        { size: "Large", price: 2.4 },
       ],
     },
     {
       food: "Saveloy",
-      prices: [{ price: 1.9 }],
+      prices: [{ price: 2.4 }],
     },
     {
       food: "Bigfoot  *served in a baguette*",
-      prices: [{ price: 4.1 }],
+      prices: [{ price: 5.2 }],
     },
     {
       food: "Giant battered sausage",
-      prices: [{ price: 2 }],
+      prices: [{ price: 3.9 }],
     },
   ];
 

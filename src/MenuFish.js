@@ -5,17 +5,17 @@ export default function MenuFish(props) {
     {
       food: "Cod",
       prices: [
-        { size: "Small", price: 4.2 },
-        { size: "Regular", price: 6.8 },
-        { size: "Large", price: 8.2 },
+        { size: "Small", price: 5.1 },
+        { size: "Regular", price: 8.3 },
+        { size: "Large", price: 10.3 },
       ],
     },
-    { food: "Haddock", prices: [{ price: 7.5 }] },
-    { food: "Plaice", prices: [{ price: 7.5 }] },
+    { food: "Haddock", prices: [{ price: 9.6 }] },
+    { food: "Plaice", prices: [{ price: 9.6 }] },
     { food: "*in breadcrumbs*", prices: [{ price: 0.3 }] },
-    { food: "Fishcake", prices: [{ price: 1.3 }] },
-    { food: "Scampi (8)", prices: [{ price: 4.8 }] },
-    { food: "Cod roe", prices: [{ price: 2 }] },
+    { food: "Fishcake", prices: [{ price: 1.7 }] },
+    { food: "Scampi (8)", prices: [{ price: 5.6 }] },
+    { food: "Cod roe", prices: [{ price: 2.8 }] },
   ];
 
   return (

@@ -5,25 +5,32 @@ export default function MenuChips(props) {
     {
       food: "Chips",
       prices: [
-        { size: "Small", price: 1.6 },
-        { size: "Regular", price: 2.8 },
-        { size: "Large", price: 4.2 },
+        { size: "Small", price: 1.9 },
+        { size: "Regular", price: 3.5 },
+        { size: "Large", price: 5.3 },
       ],
     },
-    { food: "Chip butty", prices: [{ price: 2.4 }] },
-    { food: "Cheesy chips", prices: [{ price: 7.5 }] },
+    { food: "Chip butty", prices: [{ price: 2.7 }] },
+    {
+      food: "Cheesy chips",
+      prices: [
+        { size: "Small", price: 3.5 },
+        { size: "Regular", price: 5 },
+        { size: "Large", price: 6.5 },
+      ],
+    },
     {
       food: "Curry chips",
       prices: [
-        { size: "Regular", price: 4.1 },
-        { size: "Large", price: 5.4 },
+        { size: "Regular", price: 5 },
+        { size: "Large", price: 6.5 },
       ],
     },
     {
       food: "Cheesy curry chips",
       prices: [
-        { size: "Regular", price: 4.7 },
-        { size: "Large", price: 6 },
+        { size: "Regular", price: 5.7 },
+        { size: "Large", price: 6.9 },
       ],
     },
   ];
