@@ -214,12 +214,13 @@ img {
 .icon-adjustments,
 .floating-icon-adjustments {
   width: 7vh;
-  border-radius: 15px;
+  border-radius: 22px;
   padding: 4px;
   filter: brightness(110%);
 }
 .floating-icon-adjustments {
   width: 9vh;
+  border-radius: 30px;
 }
 .sqaure-image {
   width: 100%;
@@ -352,7 +353,7 @@ img {
   }
   .floating-icon-adjustments {
     width: 5vh;
-    border-radius: 12px;
+    border-radius: 30px;
     padding: 3px;
     opacity: 0.8;
   }
