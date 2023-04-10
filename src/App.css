@@ -263,6 +263,7 @@ img {
   width: 80%;
   margin: 0 auto;
   box-shadow: 3px 4px 43px -4px rgba(0, 0, 0, 0.15);
+  background-color: var(--bs-body-bg);
 }
 .col-of-MenuItemGrid {
   display: grid;

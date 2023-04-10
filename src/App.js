@@ -123,7 +123,10 @@ function App() {
       <OpeningHours id="opening-hours" />
       <PartyCatering id="party-catering" menuHref={mainMenuHref} />
       <MenuFilter id="menu" menuItems={menuItems} />
-      <MenuFish menuDetails={menuItems[0]} />
+      <MenuFish
+        menuDetails={menuItems[0]}
+        linkToNextPage={menuItems[1].menuHref}
+      />
       <MenuChips menuDetails={menuItems[1]} />
       <MenuSausage menuDetails={menuItems[2]} />
       <MenuBurger menuDetails={menuItems[3]} />

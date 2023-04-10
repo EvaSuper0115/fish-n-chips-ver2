@@ -1,5 +1,6 @@
 import React from "react";
 import MenuItemGrid from "./MenuItemGrid";
+import NextButton from "./NextButton";
 export default function MenuFish(props) {
   const menuItems = [
     {
@@ -35,6 +36,7 @@ export default function MenuFish(props) {
             ))}
           </div>
         </div>
+        <NextButton link={props.linkToNextPage} />
       </div>
     </div>
   );
