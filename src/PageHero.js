@@ -77,7 +77,7 @@ export default function PageHero(props) {
           content1={`Just Eat`}
           content2={`07578-617349`}
           linkTitle1={`Order on Just Eat`}
-          linkTitle2={`Adastral Fish & Chips Telephone Number for Ordering`}
+          linkTitle2={`Call Adastral Fish & Chips now`}
         />
       </div>
     </div>

@@ -85,7 +85,7 @@ function App() {
                 href="#party-catering"
                 title="Adastral Fish & Chips Party Catering Service"
               >
-                Party
+                Book
               </a>
             </li>
             <li className="nav-item dropdown">
