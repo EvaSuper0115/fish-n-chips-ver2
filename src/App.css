@@ -13,6 +13,7 @@
 body {
   font-family: var(--main-font-family);
   font-weight: var(--main-font-weight);
+  color: #212529de;
 }
 a {
   text-decoration: none;
@@ -236,6 +237,7 @@ img {
   grid-template-columns: 1fr 1fr;
   grid-gap: 5px;
   margin: 1vh auto;
+  justify-items: center;
 }
 .float-end {
   justify-self: flex-end;

@@ -5,7 +5,6 @@ export default function OrderGrid(props) {
     <div className="order-grid display-none-when-extra-small">
       <a
         id="order-links"
-        className="float-end"
         href={props.link1}
         target="_blank"
         rel="noreferrer"
