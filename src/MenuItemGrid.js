@@ -2,6 +2,11 @@ import { React, useState } from "react";
 
 export default function MenuItemGrid(props) {
   const [liked, setLiked] = useState("");
+  const [likedTimes, setLikedTimes] = useState(1);
+  function handleAdd(event) {
+    event.preventDefault();
+    setLikedTimes(likedTimes + 1);
+  }
 
   function handleClick(event) {
     event.preventDefault();
@@ -17,7 +22,8 @@ export default function MenuItemGrid(props) {
           </button>
           {liked !== "" && (
             <span>
-              1<button>+</button>
+              {likedTimes}
+              <button onClick={handleAdd}>+</button>
             </span>
           )}
         </div>
