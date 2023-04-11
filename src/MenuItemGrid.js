@@ -2,6 +2,7 @@ import { React, useState } from "react";
 
 export default function MenuItemGrid(props) {
   const [liked, setLiked] = useState("");
+
   function handleClick(event) {
     event.preventDefault();
     setLiked("liked-item");
@@ -14,6 +15,11 @@ export default function MenuItemGrid(props) {
           <button onClick={handleClick} title={`Like ${props.food}`}>
             <i className={`fa-solid fa-heart ${liked}`}></i>
           </button>
+          {liked !== "" && (
+            <span>
+              1<button>+</button>
+            </span>
+          )}
         </div>
 
         <div className="menu-item-col">
