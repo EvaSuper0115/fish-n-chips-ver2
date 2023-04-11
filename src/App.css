@@ -24,6 +24,7 @@ button {
   border-width: 0;
   border-radius: 5px;
   transition: var(--transition);
+  background: none;
 }
 a:hover,
 button:hover {
@@ -315,6 +316,15 @@ img {
   color: white;
   box-shadow: var(--subtle-shadow);
 }
+.fa-heart {
+  background: none;
+  color: rgb(196 196 196 / 46%);
+  padding: 2px;
+  font-size: 3vh;
+}
+.liked-item {
+  color: red;
+}
 @media (min-width: 577px) {
   .display-none-when-big-screen {
     display: none;
@@ -356,7 +366,8 @@ img {
     margin: 0;
     width: 100%;
   }
-  .fa-solid {
+  .fa-angle-right,
+  .fa-angle-left {
     transform: rotate(90deg);
   }
 }
