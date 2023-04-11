@@ -15,7 +15,7 @@ export default function MenuDrinks(props) {
 
   return (
     <div className="MenuOthers" id={props.menuDetails.menuHref}>
-      <div className="section-padding">
+      <div className="stay-middle-section-padding">
         <div className="previous-menu-next-grid">
           <PreviousButton link={props.linkToPreviousPage} />
           <div className="menu-card">

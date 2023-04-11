@@ -21,7 +21,7 @@ export default function MenuFish(props) {
 
   return (
     <div className="MenuFish" id={props.menuDetails.menuHref}>
-      <div className="section-padding">
+      <div className="stay-middle-section-padding">
         <div className="previous-menu-next-grid">
           <div></div>
           <div className="menu-card">

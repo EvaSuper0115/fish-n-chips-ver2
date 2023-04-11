@@ -3,7 +3,9 @@ export default function NextButton(props) {
   const linkToNextPage = `#${props.link}`;
   return (
     <span className="nextButton">
-      <a href={linkToNextPage}>next</a>
+      <a href={linkToNextPage} title="next menu">
+        <i className="fa-solid fa-angle-right"></i>
+      </a>
     </span>
   );
 }

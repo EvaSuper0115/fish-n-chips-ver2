@@ -1,7 +1,7 @@
 import React from "react";
 export default function MenuFilter(props) {
   return (
-    <div className="MenuFilter section-padding" id={props.id}>
+    <div className="MenuFilter stay-middle-section-padding" id={props.id}>
       <h2 className="black-large-title">What food would you like ?</h2>
       <div className="menuTypeGrid">
         {props.menuItems.map((menuItem, index) => (

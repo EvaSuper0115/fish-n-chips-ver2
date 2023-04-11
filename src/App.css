@@ -90,7 +90,7 @@ img {
   grid-gap: 20px;
 }
 .section-padding,
-.page-hero-section-padding {
+.stay-middle-section-padding {
   padding: var(--section-padding);
   min-height: 100vh;
   display: grid;
@@ -257,7 +257,6 @@ img {
 }
 .menu-card {
   padding: 40px;
-  background: #d9d9d93b;
   border-radius: 10px;
   border-width: 0;
   width: 80%;
@@ -306,6 +305,13 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 10px 0;
+}
+.fa-solid {
+  background: #8080805c;
+  border-radius: 50px;
+  padding: 18px;
+  color: white;
 }
 @media (min-width: 577px) {
   .display-none-when-big-screen {
@@ -348,6 +354,9 @@ img {
     margin: 0;
     width: 100%;
   }
+  .fa-solid {
+    transform: rotate(90deg);
+  }
 }
 
 @media (max-width: 576px) {
@@ -361,7 +370,7 @@ img {
     padding: var(--576px-screen-section-padding);
     min-height: 100%;
   }
-  .page-hero-section-padding {
+  .stay-middle-section-padding {
     padding: var(--576px-screen-section-padding);
   }
   .menuTypeGrid {

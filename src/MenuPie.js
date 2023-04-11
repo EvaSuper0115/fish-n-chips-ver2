@@ -20,7 +20,7 @@ export default function MenuPie(props) {
 
   return (
     <div className="MenuPie" id={props.menuDetails.menuHref}>
-      <div className="section-padding">
+      <div className="stay-middle-section-padding">
         <div className="previous-menu-next-grid">
           <PreviousButton link={props.linkToPreviousPage} />
           <div className="menu-card">
