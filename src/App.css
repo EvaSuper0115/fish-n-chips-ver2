@@ -4,7 +4,7 @@
   --large-heading-font-family: "Libre Baskerville";
   --sub-heading-font-family: "Playfair Display";
   --transition: all 200ms ease-in-out;
-  --shadow: 2px 1px 5px rgb(109, 109, 109);
+  --subtle-shadow: 3px 4px 43px -4px rgba(0, 0, 0, 0.15);
   --button-background-color: linear-gradient(135deg, #40aaf3 40%, #4de5fc);
   --section-padding: 40px 50px;
   --576px-screen-section-padding: 40px 15px;
@@ -55,6 +55,7 @@ img {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  box-shadow: var(--subtle-shadow);
 }
 
 .individualFloatingNote {
@@ -206,7 +207,7 @@ img {
   border-radius: 50px;
   padding: 5px 80px;
   font-size: 45px;
-  box-shadow: 3px 4px 43px -4px rgba(0, 0, 0, 0.15);
+  box-shadow: var(--subtle-shadow);
 }
 .center-content {
   display: flex;
@@ -253,7 +254,7 @@ img {
   border-radius: 10px;
   width: 100%;
   aspect-ratio: 2/1;
-  box-shadow: 3px 4px 43px -4px rgba(0, 0, 0, 0.15);
+  box-shadow: var(--subtle-shadow);
 }
 .menu-card {
   padding: 40px;
@@ -261,7 +262,7 @@ img {
   border-width: 0;
   width: 80%;
   margin: 0 auto;
-  box-shadow: 3px 4px 43px -4px rgba(0, 0, 0, 0.15);
+  box-shadow: var(--subtle-shadow);
   background-color: var(--bs-body-bg);
 }
 .col-of-MenuItemGrid {
@@ -312,6 +313,7 @@ img {
   border-radius: 50px;
   padding: 18px;
   color: white;
+  box-shadow: var(--subtle-shadow);
 }
 @media (min-width: 577px) {
   .display-none-when-big-screen {
