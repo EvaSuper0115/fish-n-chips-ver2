@@ -22,7 +22,8 @@ export default function MenuFish(props) {
   return (
     <div className="MenuFish" id={props.menuDetails.menuHref}>
       <div className="section-padding">
-        <div className="">
+        <div className="previous-menu-next-grid">
+          <div></div>
           <div className="menu-card">
             <h3 className="itallic-subHeading">
               {props.menuDetails.menuTitle}
@@ -35,8 +36,8 @@ export default function MenuFish(props) {
               />
             ))}
           </div>
+          <NextButton link={props.linkToNextPage} />
         </div>
-        <NextButton link={props.linkToNextPage} />
       </div>
     </div>
   );

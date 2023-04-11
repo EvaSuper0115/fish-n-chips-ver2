@@ -2,8 +2,8 @@ import React from "react";
 export default function NextButton(props) {
   const linkToNextPage = `#${props.link}`;
   return (
-    <div>
+    <span className="nextButton">
       <a href={linkToNextPage}>next</a>
-    </div>
+    </span>
   );
 }

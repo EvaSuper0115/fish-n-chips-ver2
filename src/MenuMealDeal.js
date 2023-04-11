@@ -1,5 +1,7 @@
 import React from "react";
 import MenuItemGrid from "./MenuItemGrid";
+import PreviousButton from "./PreviousButton";
+import NextButton from "./NextButton";
 export default function MenuMealDeal(props) {
   const menuItems = [
     { food: "Cod & chips", prices: [{ price: 8.3 }] },
@@ -12,15 +14,19 @@ export default function MenuMealDeal(props) {
   return (
     <div className="MenuOthers" id={props.menuDetails.menuHref}>
       <div className="section-padding">
-        <div className="menu-card">
-          <h3 className="itallic-subHeading">{`${props.menuDetails.menuTitle} (including a canned drink)`}</h3>
-          {menuItems.map((item) => (
-            <MenuItemGrid
-              key={item.food}
-              food={item.food}
-              price={item.prices}
-            />
-          ))}
+        <div className="previous-menu-next-grid">
+          <PreviousButton link={props.linkToPreviousPage} />
+          <div className="menu-card">
+            <h3 className="itallic-subHeading">{`${props.menuDetails.menuTitle} (including a canned drink)`}</h3>
+            {menuItems.map((item) => (
+              <MenuItemGrid
+                key={item.food}
+                food={item.food}
+                price={item.prices}
+              />
+            ))}
+          </div>
+          <NextButton link={props.linkToNextPage} />
         </div>
       </div>
     </div>

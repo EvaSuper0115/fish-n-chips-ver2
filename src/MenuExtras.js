@@ -1,5 +1,6 @@
 import React from "react";
 import MenuItemGrid from "./MenuItemGrid";
+import PreviousButton from "./PreviousButton";
 export default function MenuExtras(props) {
   const menuItems = [
     {
@@ -27,15 +28,18 @@ export default function MenuExtras(props) {
   return (
     <div className="MenuOthers" id={props.menuDetails.menuHref}>
       <div className="section-padding">
-        <div className="menu-card">
-          <h3 className="itallic-subHeading">{`${props.menuDetails.menuTitle} `}</h3>
-          {menuItems.map((item) => (
-            <MenuItemGrid
-              key={item.food}
-              food={item.food}
-              price={item.prices}
-            />
-          ))}
+        <div className="previous-menu-next-grid">
+          <PreviousButton link={props.linkToPreviousPage} />
+          <div className="menu-card">
+            <h3 className="itallic-subHeading">{`${props.menuDetails.menuTitle} `}</h3>
+            {menuItems.map((item) => (
+              <MenuItemGrid
+                key={item.food}
+                food={item.food}
+                price={item.prices}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>

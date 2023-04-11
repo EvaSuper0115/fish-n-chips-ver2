@@ -127,17 +127,60 @@ function App() {
         menuDetails={menuItems[0]}
         linkToNextPage={menuItems[1].menuHref}
       />
-      <MenuChips menuDetails={menuItems[1]} />
-      <MenuSausage menuDetails={menuItems[2]} />
-      <MenuBurger menuDetails={menuItems[3]} />
-      <MenuPie menuDetails={menuItems[4]} />
-      <MenuChicken menuDetails={menuItems[5]} />
-      <MenuOthers menuDetails={menuItems[6]} />
-      <MenuChildrensMeal menuDetails={menuItems[7]} />
-      <MenuMealDeal menuDetails={menuItems[8]} />
-      <MenuOAP menuDetails={menuItems[9]} />
-      <MenuDrinks menuDetails={menuItems[10]} />
-      <MenuExtras menuDetails={menuItems[11]} />
+      <MenuChips
+        menuDetails={menuItems[1]}
+        linkToPreviousPage={menuItems[0].menuHref}
+        linkToNextPage={menuItems[2].menuHref}
+      />
+      <MenuSausage
+        menuDetails={menuItems[2]}
+        linkToPreviousPage={menuItems[1].menuHref}
+        linkToNextPage={menuItems[3].menuHref}
+      />
+      <MenuBurger
+        menuDetails={menuItems[3]}
+        linkToPreviousPage={menuItems[2].menuHref}
+        linkToNextPage={menuItems[4].menuHref}
+      />
+      <MenuPie
+        menuDetails={menuItems[4]}
+        linkToPreviousPage={menuItems[3].menuHref}
+        linkToNextPage={menuItems[5].menuHref}
+      />
+      <MenuChicken
+        menuDetails={menuItems[5]}
+        linkToPreviousPage={menuItems[4].menuHref}
+        linkToNextPage={menuItems[6].menuHref}
+      />
+      <MenuOthers
+        menuDetails={menuItems[6]}
+        linkToPreviousPage={menuItems[5].menuHref}
+        linkToNextPage={menuItems[7].menuHref}
+      />
+      <MenuChildrensMeal
+        menuDetails={menuItems[7]}
+        linkToPreviousPage={menuItems[6].menuHref}
+        linkToNextPage={menuItems[8].menuHref}
+      />
+      <MenuMealDeal
+        menuDetails={menuItems[8]}
+        linkToPreviousPage={menuItems[7].menuHref}
+        linkToNextPage={menuItems[9].menuHref}
+      />
+      <MenuOAP
+        menuDetails={menuItems[9]}
+        linkToPreviousPage={menuItems[8].menuHref}
+        linkToNextPage={menuItems[10].menuHref}
+      />
+      <MenuDrinks
+        menuDetails={menuItems[10]}
+        linkToPreviousPage={menuItems[9].menuHref}
+        linkToNextPage={menuItems[11].menuHref}
+      />
+      <MenuExtras
+        menuDetails={menuItems[11]}
+        linkToPreviousPage={menuItems[10].menuHref}
+      />
       <FloatingOrderNote />
       <Footer />
     </div>

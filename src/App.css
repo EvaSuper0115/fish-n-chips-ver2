@@ -297,6 +297,16 @@ img {
 .menuItemsText {
   text-transform: capitalize;
 }
+.previous-menu-next-grid {
+  display: grid;
+  grid-template-columns: 0.1fr 0.8fr 0.1fr;
+}
+.previousButton,
+.nextButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 @media (min-width: 577px) {
   .display-none-when-big-screen {
     display: none;
@@ -307,7 +317,8 @@ img {
     display: none;
   }
   .order-grid,
-  .half-a-page-grid {
+  .half-a-page-grid,
+  .previous-menu-next-grid {
     grid-template-columns: 1fr;
   }
   .float-end,
