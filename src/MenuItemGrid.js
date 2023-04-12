@@ -10,6 +10,10 @@ export default function MenuItemGrid(props) {
       setLikedTimes(1);
     }
   }, [likedTimes]);
+  function handleBin(event) {
+    event.preventDefault();
+    setLiked("");
+  }
 
   function handleMinus(event) {
     event.preventDefault();
@@ -34,10 +38,17 @@ export default function MenuItemGrid(props) {
           </button>
           {liked === "liked-item" && likedTimes > 0 && (
             <span>
-              {likedTimes}
+              <span>{likedTimes}</span>
               <div>
-                <button onClick={handleAdd}>+</button>
-                <button onClick={handleMinus}>-</button>
+                <button className="plus-minus-buttons" onClick={handleAdd}>
+                  +
+                </button>
+                <button className="plus-minus-buttons" onClick={handleMinus}>
+                  -
+                </button>
+                <button className="plus-minus-buttons" onClick={handleBin}>
+                  <i className="fa-solid fa-dumpster"></i>
+                </button>
               </div>
             </span>
           )}

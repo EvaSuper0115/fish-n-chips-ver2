@@ -316,15 +316,20 @@ img {
   color: white;
   box-shadow: var(--subtle-shadow);
 }
-.fa-heart {
+.fa-heart,
+.fa-dumpster {
   background: none;
   color: rgb(196 196 196 / 46%);
   padding: 2px;
   font-size: 3vh;
 }
 .liked-item {
-  color: red;
+  color: #ff0000a3;
 }
+.plus-minus-buttons {
+  font-size: 20px;
+}
+
 @media (min-width: 577px) {
   .display-none-when-big-screen {
     display: none;
