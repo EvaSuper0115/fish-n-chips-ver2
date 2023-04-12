@@ -7,8 +7,9 @@ export default function MenuItemGrid(props) {
   useEffect(() => {
     if (likedTimes < 1) {
       setLiked("");
+      setLikedTimes(1);
     }
-  });
+  }, [likedTimes]);
 
   function handleMinus(event) {
     event.preventDefault();
