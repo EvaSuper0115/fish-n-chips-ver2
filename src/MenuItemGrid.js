@@ -1,8 +1,14 @@
-import { React, useState } from "react";
+import { React, useState, useEffect } from "react";
 
 export default function MenuItemGrid(props) {
   const [liked, setLiked] = useState("");
   const [likedTimes, setLikedTimes] = useState(1);
+
+  useEffect(() => {
+    if (likedTimes < 1) {
+      setLiked("");
+    }
+  });
 
   function handleMinus(event) {
     event.preventDefault();
