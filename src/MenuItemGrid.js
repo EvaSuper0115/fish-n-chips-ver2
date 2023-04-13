@@ -13,6 +13,7 @@ export default function MenuItemGrid(props) {
   function handleBin(event) {
     event.preventDefault();
     setLiked("");
+    setLikedTimes(1);
   }
 
   function handleMinus(event) {
