@@ -65,7 +65,10 @@ export default function MenuItemGrid(props) {
             <select onChange={handleChange}>
               {props.price.map((item, index) => (
                 <option key={index} value={item.price}>
-                  {item.size} £{Number(item.price).toFixed(2)}
+                  {item.size}{" "}
+                  {item.price >= 1
+                    ? "£" + Number(item.price).toFixed(2)
+                    : Number(item.price * 100).toFixed(0) + "p"}
                 </option>
               ))}
             </select>
