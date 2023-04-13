@@ -29,6 +29,11 @@ export default function MenuItemGrid(props) {
     event.preventDefault();
     setLiked("liked-item");
   }
+  function handleChange(event) {
+    event.preventDefault();
+    let chosenPrice = event.target.value;
+    console.log(chosenPrice);
+  }
   return (
     <div className="MenuItemGrid">
       <div className="menu-item-grid">
@@ -56,17 +61,15 @@ export default function MenuItemGrid(props) {
         </div>
 
         <div className="menu-item-col">
-          <select>
-            {props.price.map((item, index) => (
-              <option>
-                <div key={index}>
-                  <span className={`menu-item-col`}>
-                    {item.size} £{Number(item.price).toFixed(2)}
-                  </span>
-                </div>
-              </option>
-            ))}
-          </select>
+          <form>
+            <select onChange={handleChange}>
+              {props.price.map((item, index) => (
+                <option key={index} value={item.price}>
+                  {item.size} £{Number(item.price).toFixed(2)}
+                </option>
+              ))}
+            </select>
+          </form>
         </div>
       </div>
     </div>
