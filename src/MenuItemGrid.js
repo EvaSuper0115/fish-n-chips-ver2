@@ -60,7 +60,7 @@ export default function MenuItemGrid(props) {
           )}
         </div>
 
-        <div className="menu-item-col">
+        <div className="menu-item-col menu-price-col">
           <form>
             <select onChange={handleChange}>
               {props.price.map((item, index) => (

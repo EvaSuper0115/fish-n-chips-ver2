@@ -409,4 +409,8 @@ footer {
   .floatingNote {
     padding: 1px;
   }
+  .menu-price-col {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
