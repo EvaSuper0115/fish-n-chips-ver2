@@ -61,18 +61,31 @@ export default function MenuItemGrid(props) {
         </div>
 
         <div className="menu-item-col menu-price-col">
-          <form>
-            <select onChange={handleChange}>
+          {props.price.some((item) => item.size) ? (
+            <form>
+              <select onChange={handleChange}>
+                <option>--choose size--</option>
+                {props.price.map((item, index) => (
+                  <option key={index} value={item.price}>
+                    {item.size}{" "}
+                    {item.price >= 1
+                      ? "£" + Number(item.price).toFixed(2)
+                      : Number(item.price * 100).toFixed(0) + "p"}
+                  </option>
+                ))}
+              </select>
+            </form>
+          ) : (
+            <div>
               {props.price.map((item, index) => (
-                <option key={index} value={item.price}>
-                  {item.size}{" "}
+                <span key={index} value={item.price}>
                   {item.price >= 1
                     ? "£" + Number(item.price).toFixed(2)
                     : Number(item.price * 100).toFixed(0) + "p"}
-                </option>
+                </span>
               ))}
-            </select>
-          </form>
+            </div>
+          )}
         </div>
       </div>
     </div>
