@@ -9,31 +9,27 @@ export default function MenuItemGrid(props) {
       setLiked("");
       setLikedTimes(0);
     }
+    console.log(likedTimes);
   }, [likedTimes]);
   function handleBin(event) {
     event.preventDefault();
     setLiked("");
     setLikedTimes(0);
-    console.log(likedTimes);
   }
 
   function handleMinus(event) {
     event.preventDefault();
     setLikedTimes(likedTimes - 1);
-    console.log(likedTimes);
   }
   function handleAdd(event) {
     event.preventDefault();
     setLikedTimes(likedTimes + 1);
-    console.log(likedTimes);
   }
 
   function handleClick(event) {
     event.preventDefault();
     setLiked("liked-item");
-
     setLikedTimes(1);
-    console.log(likedTimes, "after");
   }
   function handleChange(event) {
     event.preventDefault();
