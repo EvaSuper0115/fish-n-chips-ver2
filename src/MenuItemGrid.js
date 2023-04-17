@@ -43,20 +43,20 @@ export default function MenuItemGrid(props) {
             <i className={`fa-solid fa-heart ${liked}`}></i>
           </button>
           {liked === "liked-item" && likedTimes > 0 && (
-            <span>
+            <div>
               <span>{likedTimes}</span>
-              <div>
+              <span>
                 <button className="plus-minus-buttons" onClick={handleAdd}>
                   +
                 </button>
                 <button className="plus-minus-buttons" onClick={handleMinus}>
                   -
                 </button>
-                <button className="plus-minus-buttons" onClick={handleBin}>
-                  <i className="fa-solid fa-dumpster"></i>
-                </button>
-              </div>
-            </span>
+              </span>
+              <button className="plus-minus-buttons" onClick={handleBin}>
+                <i className="fa-solid fa-dumpster"></i>
+              </button>
+            </div>
           )}
         </div>
 
@@ -64,7 +64,7 @@ export default function MenuItemGrid(props) {
           {props.price.some((item) => item.size) ? (
             <form>
               <select onChange={handleChange}>
-                <option>--choose size--</option>
+                <option>-choose size-</option>
                 {props.price.map((item, index) => (
                   <option key={index} value={item.price}>
                     {item.size}{" "}
