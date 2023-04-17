@@ -2,32 +2,38 @@ import { React, useState, useEffect } from "react";
 
 export default function MenuItemGrid(props) {
   const [liked, setLiked] = useState("");
-  const [likedTimes, setLikedTimes] = useState(1);
+  const [likedTimes, setLikedTimes] = useState(0);
 
   useEffect(() => {
     if (likedTimes < 1) {
       setLiked("");
-      setLikedTimes(1);
+      setLikedTimes(0);
     }
   }, [likedTimes]);
   function handleBin(event) {
     event.preventDefault();
     setLiked("");
-    setLikedTimes(1);
+    setLikedTimes(0);
+    console.log(likedTimes);
   }
 
   function handleMinus(event) {
     event.preventDefault();
     setLikedTimes(likedTimes - 1);
+    console.log(likedTimes);
   }
   function handleAdd(event) {
     event.preventDefault();
     setLikedTimes(likedTimes + 1);
+    console.log(likedTimes);
   }
 
   function handleClick(event) {
     event.preventDefault();
     setLiked("liked-item");
+
+    setLikedTimes(1);
+    console.log(likedTimes, "after");
   }
   function handleChange(event) {
     event.preventDefault();
